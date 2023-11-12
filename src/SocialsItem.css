@@ -1,0 +1,36 @@
+.socialsItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: auto;
+    margin-left:0;
+  }
+  
+  .socialsItemLogo {
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+    margin: 0px;
+    background-color: rgba(187, 187, 187, 1);
+    border-radius: 10px;
+    padding: 7px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .socialsItemHandle {
+    text-align: left;
+    white-space: pre-wrap;
+    color: rgba(215, 215, 215, 1);
+    font-family: "Avenir Next LT Pro";
+    font-weight: 400;
+    font-size: 23px;
+    letter-spacing: 0.23px;
+    line-height: 100%;
+    text-transform: none;
+    margin: 0px 0px 0px 10px;
+  }

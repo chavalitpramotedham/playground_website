@@ -1,0 +1,66 @@
+.influencerListItem {
+    border-radius: 0px;
+    display: flex;
+    position: relative;
+    isolation: isolate;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    box-sizing: border-box;
+    height: auto;
+    width: fit-content;
+    gap: 10px;
+    margin-top: auto;
+  }
+  .influencerLogo {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    margin: 0px;
+    border-radius: 50%;
+  }
+  .influencerInfo {
+    border-radius: 0px;
+    display: flex;
+    position: relative;
+    isolation: isolate;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 10px 0px 0px 0px;
+    gap:4px;
+  }
+  .influencerHandle {
+    text-align: left;
+    white-space: nowrap;
+    font-synthesis: none;
+    color: rgba(255, 255, 255, 1);
+    font-style: normal;
+    font-family: "Avenir Next LT Pro";
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    line-height: 100%;
+    text-transform: none;
+    margin: 0px;
+  }
+  .influencerFollowers {
+    text-align: left;
+    white-space: nowrap;
+    font-synthesis: none;
+    color: rgba(255, 255, 255, 1);
+    font-style: normal;
+    font-family: "Avenir Next LT Pro";
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.17px;
+    text-decoration: none;
+    line-height: 100%;
+    text-transform: none;
+    margin: 4px 0px 0px 0px;
+  }
+  

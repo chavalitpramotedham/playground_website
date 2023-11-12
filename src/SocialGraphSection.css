@@ -1,0 +1,10 @@
+.socialGraphSection{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    max-width: 750px;
+    width: 50%;
+    max-height: 500px;
+    align-items: center;
+    justify-content: center;
+}

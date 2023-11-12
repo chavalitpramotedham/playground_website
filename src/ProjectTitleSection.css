@@ -1,0 +1,291 @@
+.projectTitleSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.projectTitleSectionContents {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 50px;
+}
+
+.projectSummary {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 69px;
+  width: auto;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.projectBasicInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px;
+}
+
+.projectLogo {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  margin: 0px;
+  border-radius: 50%;
+}
+
+.projectTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0px 0px 0px 83px;
+}
+
+.title {
+  text-align: left;
+  white-space: pre-wrap;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Zilap Orion Personal Use";
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 0.6px;
+  line-height: 100%;
+  text-transform: none;
+  margin: 0px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 25px 0px 0px 0px;
+  padding-left:5px;
+}
+
+.projectAdditional {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0px;
+  flex: 1;
+  margin: 0px 0px 0px 200px;
+}
+
+.projectAdditionalContents {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 299px;
+  margin: 0px;
+}
+
+.shareButton {
+  background-color: rgba(74, 74, 74, 1);
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 34px;
+  margin: 0px;
+  width: 100%;
+}
+
+.shareButtonIcon {
+  width: 22px;
+  height: auto;
+  margin: 0px;
+  padding: 0px 0px 5px 0px;
+}
+
+.shareButtonText {
+  text-align: left;
+  white-space: pre-wrap;
+  font-synthesis: none;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Avenir Next LT Pro;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.24px;
+  text-decoration: none;
+  line-height: 100%;
+  text-transform: none;
+  margin: 0px 0px 0px 17px;
+}
+.ratingButtons {
+  border-radius: 0px;
+  display: flex;
+  position: relative;
+  isolation: isolate;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  box-sizing: border-box;
+  align-self: stretch;
+  margin: 19px 0px 0px 0px;
+}
+.upvoteButton {
+  background-color: rgba(45, 45, 45, 1);
+  border-radius: 100px;
+  display: flex;
+  position: relative;
+  isolation: isolate;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 34px;
+  box-sizing: border-box;
+  flex: 1;
+  margin: 0;
+}
+.upvoteButtonText {
+  text-align: left;
+  white-space: pre-wrap;
+  font-synthesis: none;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Avenir Next LT Pro;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.24px;
+  text-decoration: none;
+  line-height: 100%;
+  text-transform: none;
+  margin: 0;
+}
+.downvoteButton {
+  background-color: rgba(45, 45, 45, 1);
+  border-radius: 100px;
+  display: flex;
+  position: relative;
+  isolation: isolate;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 17px;
+  box-sizing: border-box;
+  align-self: stretch;
+  width: 66px;
+  margin: 0px 0px 0px 10px;
+}
+.downvoteButtonText {
+  text-align: left;
+  white-space: pre-wrap;
+  font-synthesis: none;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Avenir Next LT Pro;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.24px;
+  text-decoration: none;
+  line-height: 100%;
+  text-transform: none;
+  margin: 0;
+}
+
+.influencerSection {
+  border-radius: 0px;
+  display: flex;
+  position: relative;
+  isolation: isolate;
+  flex-direction: row;
+  width: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 194px;
+  box-sizing: border-box;
+  height: auto;
+  margin-left: 0;
+  margin-right: auto;
+}
+.connector {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 250px;
+  width: 150px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.topConnector {
+  border: 0;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  box-sizing: border-box;
+  border-radius: 0px 0px 0px 20px;
+  align-self: stretch;
+  width: 100%;
+  height: 50%;
+  /* flex: 1; */
+  margin: 0;
+  min-width: 50px;
+}
+.bottomConnector {
+  border-radius: 0px;
+  align-self: stretch;
+  width: 100%;
+  height: 50%;
+  /* flex: 1; */
+  margin: 0;
+}
+.influencerListSection {
+  border-radius: 0px;
+  display: flex;
+  position: relative;
+  isolation: isolate;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  box-sizing: border-box;
+  margin: 0px 0px 0px 42px;
+}
+.influencerListTitle {
+  text-align: center;
+  white-space: pre-wrap;
+  font-synthesis: none;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Avenir Next LT Pro;
+  font-weight: 700;
+  font-size: 29px;
+  letter-spacing: 0.29px;
+  text-decoration: none;
+  line-height: 100%;
+  text-transform: none;
+  align-self: stretch;
+  margin: 0px;
+}
+.influencerList {
+  border-radius: 0px;
+  display: flex;
+  position: relative;
+  isolation: isolate;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  box-sizing: border-box;
+  margin: 36px 0px 0px 0px;
+  gap: 50px;
+}

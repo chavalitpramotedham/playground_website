@@ -1,0 +1,22 @@
+.projectOverall {
+  background-image: url("src/assets/images/main_background.png");
+  background-position: top;
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  border-radius: 0px;
+  display: flex;
+  position: relative;
+  isolation: isolate;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 67px 50px;
+  box-sizing: border-box;
+  align-self: stretch;
+  margin: 0px;
+  gap:50px;
+}
+
+.content{
+    height: 1000px;
+}
