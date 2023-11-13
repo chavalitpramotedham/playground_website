@@ -47,6 +47,9 @@
     line-height: 100%;
     text-transform: none;
     margin: 0px;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .influencerFollowers {
     text-align: left;

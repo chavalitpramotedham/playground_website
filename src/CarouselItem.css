@@ -11,25 +11,12 @@
   padding: 8px 20px;
   box-sizing: border-box;
   height: auto;
-  width: fit-content;
+  width: 300px;
   margin-right: 26px;
 }
 
 .carouselItem:hover{
   background-color: rgb(167, 167, 167);
-  box-shadow: 0px 4px 2px rgba(0, 0, 0, 1);
-  border-radius: 100px;
-  display: flex;
-  position: relative;
-  isolation: isolate;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 8px 20px;
-  box-sizing: border-box;
-  height: auto;
-  width: fit-content;
-  margin-right: 26px;
 }
 
 .carouselItemContents {
@@ -38,11 +25,13 @@
   position: relative;
   isolation: isolate;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 0px;
   box-sizing: border-box;
   margin: 0px;
+  width:100%;
+  overflow-x: hidden;
 }
 
 .leftSide {
@@ -94,6 +83,7 @@
   padding: 0px;
   box-sizing: border-box;
   margin: 0px 0px 0px 15px;
+  flex:1;
 }
 
 .carouselProjectImage {
@@ -115,10 +105,11 @@
   padding: 0px 8px 0px 0px;
   box-sizing: border-box;
   margin: 0px 0px 0px 9px;
+  flex:1;
 }
 .carouselProjectTicker {
-  text-align: center;
-  white-space: pre-wrap;
+  text-align: left;
+  white-space: nowrap;
   font-synthesis: none;
   color: rgba(0, 0, 0, 1);
   font-style: normal;
@@ -130,11 +121,14 @@
   line-height: 100%;
   text-transform: none;
   margin: 0px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .carouselProjectTitle {
   text-align: left;
-  white-space: pre-wrap;
+  white-space: nowrap;
   font-synthesis: none;
   color: rgba(91, 91, 91, 1);
   font-style: normal;
@@ -146,4 +140,6 @@
   line-height: 125%;
   text-transform: none;
   margin: 0px;
+  text-overflow: ellipsis;
+  width: 100%;
 }

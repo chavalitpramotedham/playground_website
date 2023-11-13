@@ -1,15 +1,15 @@
 import React from "react";
 import "./SearchResultItem.css";
 
-export function SearchResultItem({ id, title, clickSearchResult}) {
+export function SearchResultItem({ project, clickSearchResult}) {
   return (
-    <button className="navbarSearchResultItem" onClick={() => clickSearchResult(id)}>
+    <button className="navbarSearchResultItem" onClick={() => clickSearchResult(project.projectId)}>
       <img
         className="searchProjectImage"
-        src="src/assets/images/project_placeholder.png"
+        src={project.projectImageUrl}
         alt="Project_Image"
       ></img>
-      <span className="searchProjectTitle">{title}</span>
+      <span className="searchProjectTitle">{project.projectName}</span>
     </button>
   );
 }

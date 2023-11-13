@@ -4,7 +4,7 @@ import "./ProjectTitleSection.css";
 import { InfluencerListItem } from "./InfluencerListItem";
 import { SocialsItem } from "./SocialsItem";
 
-export function ProjectTitleSection({ projectInfo }) {
+export function ProjectTitleSection({ project }) {
 
   return (
     <div className="projectTitleSection">
@@ -13,14 +13,14 @@ export function ProjectTitleSection({ projectInfo }) {
           <div className="projectBasicInfo">
             <img
               className="projectLogo"
-              src="src/assets/images/project_placeholder.png"
+              src={project.projectImageUrl}
               alt="Logo"
             />
             <div className="projectTitle">
-              <span className="title">{projectInfo.title}</span>
+              <span className="title">{project.projectName}</span>
 
               <ul className="socials">
-                {projectInfo.socials.map((socialsItem) => {
+                {project.socials.map((socialsItem) => {
                   return <SocialsItem {...socialsItem} key={socialsItem.id} />;
                 })}
               </ul>
@@ -57,9 +57,9 @@ export function ProjectTitleSection({ projectInfo }) {
               Most Influential Followers:
             </span>
             <ul className="influencerList">
-              {projectInfo.influencers.map((influencer) => {
+              {project.connectedUsers.map((user) => {
                 return (
-                  <InfluencerListItem {...influencer} key={influencer.id} />
+                  <InfluencerListItem user = {user} key={user.id} />
                 );
               })}
             </ul>

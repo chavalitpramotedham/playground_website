@@ -12,7 +12,7 @@ const carouselItems = Array.from({ length: 20 }, (_, index) => ({
   title: `Project${index}`,
 }));
 
-export function Carousel({updateProjectID}) {
+export function Carousel({ updateProjectID, projects }) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ export function Carousel({updateProjectID}) {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: windowWidth/210,
+    slidesToShow: windowWidth / 320,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
@@ -42,8 +42,13 @@ export function Carousel({updateProjectID}) {
   return (
     <>
       <Slider {...settings} pauseOnHover={false} className="carousel">
-        {carouselItems.map((carouselItem) => (
-          <CarouselItem {...carouselItem} key={carouselItem.id} updateProjectID = {updateProjectID} />
+        {projects.map((project, index) => (
+          <CarouselItem
+            project={project}
+            key={project.projectId}
+            updateProjectID={updateProjectID}
+            projectIndex={index}
+          />
         ))}
       </Slider>
     </>
