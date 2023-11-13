@@ -2,11 +2,11 @@ import React from "react";
 import { useState } from "react";
 import "./ProjectBody.css";
 import ProjectTitleSection from "./ProjectTitleSection";
-import SocialsGrapSection from "./SocialGraphSection";
+import SocialsGraphSection from "./SocialGraphSection";
 
-export function ProjectBody() {
-  const projectTitle = "NEW PROJECT";
-  const influencers = Array.from({ length: 5 }, (_, index) => ({
+export function ProjectBody({ projectID }) {
+
+  const influencers = Array.from({ length: Math.round(3+Math.random()*3) }, (_, index) => ({
     id: index,
     handle: `Influencer${index}`,
     score: 0.6 + 0.4 * Math.random(),
@@ -15,12 +15,24 @@ export function ProjectBody() {
 
   const sortedInfluencers = influencers.sort((a, b) => b.score - a.score);
 
-  console.log(influencers);
+  const socials = [
+    { id: 0, title: "Twitter", handle: `@newproject${projectID}Twitter` },
+    { id: 1, title: "Telegram", handle: `@newproject${projectID}Telegram` },
+  ];
+
+  const projectInfo = {
+    id: { projectID },
+    ticker: `P${projectID+1}`,
+    title: `Project${projectID+1}`,
+    influencers: sortedInfluencers,
+    socials: socials,
+  };
+
   return (
     <>
       <div className="projectOverall">
-        <ProjectTitleSection title = {projectTitle} influencers ={(sortedInfluencers)} />
-        <SocialsGrapSection/>
+        <ProjectTitleSection projectInfo={projectInfo} />
+        <SocialsGraphSection />
       </div>
     </>
   );

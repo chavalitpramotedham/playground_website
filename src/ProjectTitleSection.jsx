@@ -4,12 +4,7 @@ import "./ProjectTitleSection.css";
 import { InfluencerListItem } from "./InfluencerListItem";
 import { SocialsItem } from "./SocialsItem";
 
-export function ProjectTitleSection({ title, influencers }) {
-  // using title, get socials information
-  const socials = [
-    { id: 0, title: "Twitter", handle: "@newprojectTwitter" },
-    { id: 1, title: "Telegram", handle: "@newprojectTelegram" },
-  ];
+export function ProjectTitleSection({ projectInfo }) {
 
   return (
     <div className="projectTitleSection">
@@ -22,10 +17,10 @@ export function ProjectTitleSection({ title, influencers }) {
               alt="Logo"
             />
             <div className="projectTitle">
-              <span className="title">{title}</span>
+              <span className="title">{projectInfo.title}</span>
 
               <ul className="socials">
-                {socials.map((socialsItem) => {
+                {projectInfo.socials.map((socialsItem) => {
                   return <SocialsItem {...socialsItem} key={socialsItem.id} />;
                 })}
               </ul>
@@ -43,7 +38,7 @@ export function ProjectTitleSection({ title, influencers }) {
               </button>
               <div className="ratingButtons">
                 <button className="upvoteButton">
-                  <span className="upvoteButtonText">🚀  Promote</span>
+                  <span className="upvoteButtonText">🚀 Promote</span>
                 </button>
                 <button className="downvoteButton">
                   <span className="downvoteButtonText">👎🏻</span>
@@ -62,7 +57,7 @@ export function ProjectTitleSection({ title, influencers }) {
               Most Influential Followers:
             </span>
             <ul className="influencerList">
-              {influencers.map((influencer) => {
+              {projectInfo.influencers.map((influencer) => {
                 return (
                   <InfluencerListItem {...influencer} key={influencer.id} />
                 );

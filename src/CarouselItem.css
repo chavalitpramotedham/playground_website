@@ -1,5 +1,22 @@
 .carouselItem {
   background-color: rgba(217, 217, 217, 1);
+  box-shadow: 0px 0px px rgba(0, 0, 0, 1);
+  border-radius: 100px;
+  display: flex;
+  position: relative;
+  isolation: isolate;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px 20px;
+  box-sizing: border-box;
+  height: auto;
+  width: fit-content;
+  margin-right: 26px;
+}
+
+.carouselItem:hover{
+  background-color: rgb(167, 167, 167);
   box-shadow: 0px 4px 2px rgba(0, 0, 0, 1);
   border-radius: 100px;
   display: flex;
@@ -48,7 +65,7 @@
   font-synthesis: none;
   color: rgba(0, 0, 0, 1);
   font-style: normal;
-  font-family: 'Avenir Next LT Pro';
+  font-family: 'Avenir Next LT Pro Bold';
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.2px;
@@ -105,7 +122,7 @@
   font-synthesis: none;
   color: rgba(0, 0, 0, 1);
   font-style: normal;
-  font-family: 'Avenir Next LT Pro';
+  font-family: 'Avenir Next LT Pro Bold';
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.2px;
@@ -121,7 +138,7 @@
   font-synthesis: none;
   color: rgba(91, 91, 91, 1);
   font-style: normal;
-  font-family: 'Avenir Next LT Pro';
+  font-family: 'Avenir Next LT Pro Bold';
   font-weight: 700;
   font-size: 9px;
   letter-spacing: 0.09px;

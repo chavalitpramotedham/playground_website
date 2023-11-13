@@ -16,3 +16,32 @@ html {
   width: 100%;
   height: 100%;
 }
+
+@font-face {
+  font-family: "Avenir Next LT Pro Regular";
+  src: url("src/fonts/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: "Avenir Next LT Pro Bold";
+  src: url("src/fonts/AvenirNextLTPro-Bold.otf");
+}
+@font-face {
+  font-family: "Avenir Next LT Pro Light";
+  src: url("src/fonts/AvenirNextLTPro-lt.otf");
+}
+
+@font-face {
+  font-family: "Zilap Orion Futuristic";
+  src: url("src/fonts/ZilapOrionPersonalUseFuturistic-DzA3.ttf");
+}
+
+@font-face {
+  font-family: "Zilap Orion Linear";
+  src: url("src/fonts/ZilapOrionPersonalUseLinear-AzAg.ttf");
+}
+
+@font-face {
+  font-family: "Zilap Orion Urban";
+  src: url("src/fonts/ZilapOrionPersonalUseUrban-qVJq.ttf");
+}

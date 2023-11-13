@@ -1,14 +1,13 @@
 import React from "react";
 import "./CarouselItem.css";
 
-export function CarouselItem({id, ticker, title}) {
-
+export function CarouselItem({ id, ticker, title, updateProjectID }) {
   const padwithZeros = (num) => {
-    return (num+1).toString().padStart(2,'0');
-  }
+    return (num + 1).toString().padStart(2, "0");
+  };
 
   return (
-    <div className="carouselItem">
+    <button className="carouselItem" onClick={() => updateProjectID(id)}>
       <div className="carouselItemContents">
         <div className="leftSide">
           <span className="rank">{padwithZeros(id)}</span>
@@ -26,6 +25,6 @@ export function CarouselItem({id, ticker, title}) {
           </div>
         </div>
       </div>
-    </div>
+    </button>
   );
 }
